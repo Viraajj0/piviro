@@ -343,7 +343,7 @@ body {
 .follow-title { font-size: 100px; font-weight: 900; z-index: 10; margin-bottom: -50px; }
 
 .morpheus-container { position: relative; width: 100%; max-width: 1200px; height: 700px; display: flex; justify-content: center; margin: 0 auto; }
-.morpheus-img { position: absolute; bottom: 0; height: 100%; object-fit: contain; z-index: 1; pointer-events: none; mix-blend-mode: multiply; }
+.morpheus-img { position: absolute; bottom: 0; height: 100%; object-fit: contain; z-index: 1; pointer-events: none; }
 
 .follow-text { position: absolute; top: 150px; font-size: 20px; font-weight: 600; z-index: 2; }
 .follow-text.text-left { left: 0; }
