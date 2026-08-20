@@ -342,7 +342,7 @@ body {
 .follow-top-right { text-align: right; font-weight: 700; font-size: 18px; }
 .follow-title { font-size: 100px; font-weight: 900; z-index: 10; margin-bottom: -50px; }
 
-.morpheus-container { position: relative; width: 100%; max-width: 1000px; height: 700px; display: flex; justify-content: center; }
+.morpheus-container { position: relative; width: 100%; max-width: 1200px; height: 700px; display: flex; justify-content: center; margin: 0 auto; }
 .morpheus-img { position: absolute; bottom: 0; height: 100%; object-fit: contain; z-index: 1; pointer-events: none; mix-blend-mode: multiply; }
 
 .follow-text { position: absolute; top: 150px; font-size: 20px; font-weight: 600; z-index: 2; }
@@ -372,8 +372,8 @@ body {
 }
 .social-icon { width: 80px; height: 80px; margin-bottom: 20px; transition: transform 0.3s ease; }
 .social-link:hover .social-icon { transform: scale(1.1); }
-.instagram-link { left: 0; }
-.linkedin-link { right: 0; }
+.instagram-link { left: -50px; }
+.linkedin-link { right: -50px; }
 .social-info h6 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
 .social-info p { font-size: 14px; color: #555; margin-bottom: 20px; line-height: 1.5; }
 .social-cta { color: var(--blue); font-weight: 700; font-size: 14px; border-bottom: 2px solid transparent; transition: border-color 0.3s ease; padding-bottom: 2px; }
@@ -405,20 +405,24 @@ body {
   .features-badges { justify-content: center; }
   .how-steps { flex-direction: column; align-items: center; gap: 50px; }
   .step-arrow { display: none; }
-  .social-link { position: relative; top: auto; margin: 20px; }
-  .morpheus-container { flex-direction: column; align-items: center; height: auto; padding-top: 250px; }
+  .social-link { position: relative; top: auto; margin: 10px; left: auto !important; right: auto !important; width: 90%; max-width: 350px; }
+  .morpheus-container { flex-direction: column; align-items: center; height: auto; padding-top: 100px; gap: 20px; }
   .follow-title { font-size: 60px; text-align: center; margin-bottom: 20px; }
-  .follow-text { position: relative; top: auto; text-align: center !important; margin: 20px 0; }
-  .morpheus-img { position: relative; height: 400px; margin-top: 40px; }
+  .follow-text { position: relative; top: auto; text-align: center !important; margin: 10px 0; }
+  .morpheus-img { position: relative; height: auto; width: 100%; max-width: 500px; margin-top: 20px; mix-blend-mode: multiply; }
 }
 
 @media (max-width: 768px) {
-  .logo { font-size: 80px; letter-spacing: -2px; }
-  .logo-img { max-height: 80px; }
-  .hero-subtext { font-size: 18px; }
-  .floating-el { transform: scale(0.6); }
-  .about-left h2 { font-size: 50px; }
+  .logo { font-size: 60px; letter-spacing: -2px; }
+  .logo-img { max-height: 60px; }
+  .hero-subtext { font-size: 16px; }
+  .floating-el { transform: scale(0.5); display: none; }
+  .about-left h2 { font-size: 40px; }
   .four-cards { grid-template-columns: 1fr; }
-  .how-header h2 { font-size: 40px; }
-  .phone-mockup { transform: scale(0.9); }
+  .how-header h2 { font-size: 32px; }
+  .phone-mockup { transform: scale(0.85); transform-origin: top center; margin-bottom: -90px; }
+  .sm-phone { transform: scale(0.85); transform-origin: top center; margin-bottom: -90px; }
+  .hero h1 { font-size: 50px; }
+  .follow-title { font-size: 40px; }
+  .hero-badges { display: none; }
 }
