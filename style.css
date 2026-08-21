@@ -138,6 +138,7 @@ body {
 .emoji-briefcase { bottom: -5%; left: 45%; font-size: 70px; }
 .emoji-magnet { top: 40%; right: 5%; font-size: 90px; }
 .emoji-puzzle { bottom: 0%; right: 10%; font-size: 90px; }
+.emoji-puzzle-about { bottom: 0%; right: -75px; font-size: 50px; }
 .emoji-letter { bottom: -5%; right: 25%; font-size: 70px; }
 
 /* Sticky Notes */
@@ -261,8 +262,8 @@ body {
 .phone-btn:hover { transform: scale(1.05); box-shadow: 0 6px 15px rgba(11, 77, 255, 0.4); }
 .phone-btn:active { transform: scale(0.98); }
 
-.smiley-face { position: absolute; left: 0; top: 30%; font-size: 60px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); }
-.target-icon { position: absolute; left: -20px; bottom: 30%; font-size: 60px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); }
+.smiley-face { position: absolute; left: 204px; top: 30%; font-size: 60px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); }
+.target-icon { position: absolute; left: 204px; bottom: 30%; font-size: 60px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); }
 
 .about-right { flex: 1; padding-left: 40px; position: relative; }
 .sticky-about-right { bottom: -60px; right: -50px; transform: rotate(10deg); }
@@ -378,6 +379,27 @@ body {
 .social-info p { font-size: 14px; color: #555; margin-bottom: 20px; line-height: 1.5; }
 .social-cta { color: var(--blue); font-weight: 700; font-size: 14px; border-bottom: 2px solid transparent; transition: border-color 0.3s ease; padding-bottom: 2px; }
 .social-link:hover .social-cta { border-color: var(--blue); }
+
+/* Layout Feedback Adjustments */
+.smiley-face { left: 204px !important; width: 60px !important; }
+.target-icon { left: 204px !important; width: 60px !important; }
+.about-right > div:nth-child(5) { right: -75px !important; width: 51px !important; }
+.morpheus-container > a:nth-child(4) { left: -27px !important; width: 221px !important; }
+.morpheus-container > a:nth-child(5) { right: -34px !important; width: 221px !important; }
+.about-right > div:nth-child(6) { right: -355px !important; width: 185px !important; }
+.hero-container > div:nth-child(10) { left: -50px !important; width: 85px !important; }
+.sticky-list { left: -256px !important; width: 237px !important; position: absolute !important; }
+.notepad-graphic { left: -193px !important; width: 67px !important; }
+.hero-container > div:nth-child(4) { left: -37px !important; width: 60px !important; }
+.hero-container > div:nth-child(9) { left: -120px !important; width: 53px !important; }
+img.floating-el { left: -261px !important; width: 105px !important; }
+.paper-plane { width: 83px !important; height: 84px !important; }
+.how-steps > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) { position: relative !important; left: 702px !important; }
+.how-steps > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) { margin-inline: auto !important; position: relative !important; }
+.how-steps > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) { position: relative !important; left: -94px !important; }
+.how-steps > div:nth-child(2) { position: relative !important; left: 116px !important; }
+.how-steps > div:nth-child(4) { position: relative !important; left: 521px !important; }
+.follow-header > div:nth-child(1) { left: -334px !important; width: 177px !important; }
 
 /* ========================================================================= */
 /* ANIMATIONS & RESPONSIVE                                                   */
