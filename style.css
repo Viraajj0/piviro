@@ -265,7 +265,7 @@ body {
 .target-icon { position: absolute; left: -20px; bottom: 30%; font-size: 60px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); }
 
 .about-right { flex: 1; padding-left: 40px; position: relative; }
-.sticky-about-right { bottom: -20px; right: -50px; transform: rotate(10deg); }
+.sticky-about-right { bottom: -60px; right: -50px; transform: rotate(10deg); }
 .mission-section, .believe-section { background: transparent; margin-bottom: 40px; }
 .mission-section h5, .believe-section h5 { font-size: 16px; font-weight: 800; color: var(--blue); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
 .mission-section p { font-size: 18px; font-weight: 500; line-height: 1.6; }
@@ -413,16 +413,80 @@ body {
 }
 
 @media (max-width: 768px) {
-  .logo { font-size: 60px; letter-spacing: -2px; }
+  /* GLOBAL & TYPOGRAPHY */
+  .section { padding: 40px 15px; }
+  
+  /* HERO SECTION */
+  #hero { padding-top: 80px; }
+  .hero-container { height: auto; min-height: 450px; padding-bottom: 40px; }
+  .logo { font-size: 60px; letter-spacing: -2px; margin-bottom: 15px; }
   .logo-img { max-height: 60px; }
-  .hero-subtext { font-size: 16px; }
-  .floating-el { transform: scale(0.5); display: none; }
-  .about-left h2 { font-size: 40px; }
-  .four-cards { grid-template-columns: 1fr; }
-  .how-header h2 { font-size: 32px; }
-  .phone-mockup { transform: scale(0.85); transform-origin: top center; margin-bottom: -90px; }
-  .sm-phone { transform: scale(0.85); transform-origin: top center; margin-bottom: -90px; }
-  .hero h1 { font-size: 50px; }
-  .follow-title { font-size: 40px; }
-  .hero-badges { display: none; }
+  .hero-subtext { font-size: 16px; line-height: 1.4; padding: 0 15px; }
+  .underline-sketch { width: 100px; }
+  
+  /* Emojis: Selectively show only a few to prevent overlap, hide the rest */
+  .floating-el { display: none; }
+  .emoji-target { display: block; transform: scale(0.4); top: 80%; left: 0; }
+  .emoji-briefcase { display: block; transform: scale(0.4); top: 80%; right: 0; left: auto; }
+  .emoji-juice { display: block; transform: scale(0.4); top: 5%; right: 5%; left: auto; }
+  
+  /* Hero Sticky Notes */
+  .sticky-hero-right { top: 15%; right: -15px; transform: scale(0.6) rotate(5deg); }
+  .sticky-hero-left { bottom: 0; left: -15px; transform: scale(0.6) rotate(-5deg); }
+  .notepad-graphic { transform: scale(0.5); margin-top: -20px; margin-bottom: 20px; }
+  
+  /* ABOUT SECTION */
+  .about-left h2 { font-size: 40px; margin-bottom: 15px; line-height: 1.1; }
+  .about-tagline { font-size: 20px; margin-bottom: 20px; }
+  .about-desc { font-size: 16px; }
+  .features-badges { flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .badge { padding: 10px; font-size: 13px; }
+  
+  /* Main Phone Mockup */
+  .about-center { margin: 30px 0; overflow: visible; }
+  .phone-mockup { 
+    transform: scale(0.85); 
+    transform-origin: center top; 
+    margin-bottom: -97px; /* 650px * 0.15 = 97.5px */
+  }
+  .smiley-face, .target-icon { transform: scale(0.5); }
+  .target-icon { left: -10px; bottom: 20%; }
+  .smiley-face { left: -10px; top: 20%; }
+  
+  /* About Right */
+  .mission-section p, .believe-section li { font-size: 15px; }
+  .sticky-about-right { bottom: -15px; right: -25px; transform: scale(0.5) rotate(10deg); }
+  
+  /* Cards */
+  .four-cards { grid-template-columns: 1fr; gap: 15px; }
+  .card { padding: 20px 15px; }
+  
+  /* HOW IT WORKS SECTION */
+  .how-header { margin-bottom: 30px; }
+  .how-header h2 { font-size: 36px; }
+  .how-subtitle { font-size: 16px; }
+  .sticky-how-right { top: 0; right: -25px; transform: scale(0.5) rotate(8deg); }
+  .paper-plane { transform: scale(0.5) rotate(-20deg); top: 10px; left: -15px; }
+  
+  /* Step phones */
+  .sm-phone { 
+    transform: scale(0.85); 
+    transform-origin: center top; 
+    margin-bottom: -87px; /* 580px * 0.15 = 87px */
+  }
+  .step-col { padding: 0; margin-bottom: 20px; width: 100%; }
+  
+  /* FOLLOW SECTION */
+  .follow-title { font-size: 40px; margin-bottom: 10px; }
+  .follow-top-right { font-size: 14px; text-align: center; margin-top: 15px; }
+  .sticky-follow-left { transform: scale(0.6) rotate(-5deg); left: -25px; position: relative; margin: 0 auto; }
+  .follow-header { flex-direction: column; align-items: center; text-align: center; }
+  
+  .morpheus-container { padding-top: 20px; }
+  .morpheus-img { max-width: 100%; margin-top: 10px; }
+  .follow-text { font-size: 16px; }
+  .social-link { width: 100%; max-width: 320px; padding: 25px 20px; }
+  .social-icon { width: 60px; height: 60px; margin-bottom: 15px; }
+  .social-info h6 { font-size: 20px; }
+  .social-info p { font-size: 13px; margin-bottom: 15px; }
 }
