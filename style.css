@@ -380,27 +380,6 @@ body {
 .social-cta { color: var(--blue); font-weight: 700; font-size: 14px; border-bottom: 2px solid transparent; transition: border-color 0.3s ease; padding-bottom: 2px; }
 .social-link:hover .social-cta { border-color: var(--blue); }
 
-/* Layout Feedback Adjustments */
-.smiley-face { left: 204px !important; width: 60px !important; }
-.target-icon { left: 204px !important; width: 60px !important; }
-.about-right > div:nth-child(5) { right: -75px !important; width: 51px !important; }
-.morpheus-container > a:nth-child(4) { left: -27px !important; width: 221px !important; }
-.morpheus-container > a:nth-child(5) { right: -34px !important; width: 221px !important; }
-.about-right > div:nth-child(6) { right: -355px !important; width: 185px !important; }
-.hero-container > div:nth-child(10) { left: -50px !important; width: 85px !important; }
-.sticky-list { left: -256px !important; width: 237px !important; position: absolute !important; }
-.notepad-graphic { left: 388px !important; width: 67px !important; }
-.hero-container > div:nth-child(4) { left: -127px !important; width: 60px !important; }
-.hero-container > div:nth-child(9) { left: -120px !important; width: 53px !important; }
-img.floating-el { left: -198px !important; width: 105px !important; }
-.paper-plane { width: 83px !important; height: 84px !important; }
-.how-steps > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) { position: relative !important; left: 721px !important; }
-.how-steps > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) { margin-inline: auto !important; position: relative !important; }
-.how-steps > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) { position: relative !important; left: -116px !important; }
-.how-steps > div:nth-child(2) { position: relative !important; left: 116px !important; }
-.how-steps > div:nth-child(4) { position: relative !important; left: 521px !important; }
-.follow-header > div:nth-child(1) { left: -334px !important; width: 177px !important; }
-.sticky-list > ul:nth-child(1) { position: relative !important; left: 90px !important; width: 92px !important; }
 
 /* ========================================================================= */
 /* ANIMATIONS & RESPONSIVE                                                   */
